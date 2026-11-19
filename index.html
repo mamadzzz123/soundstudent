@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11152a">
+  <title>سامانه صدای دانش‌آموز</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" data-go="home" aria-label="صفحه اصلی">
+      <span class="brand-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H11l-4.5 3v-3.3a2.5 2.5 0 0 1-2.5-2.5v-7.7Z"
+            stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M8 9h8M8 12.5h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span>
+        <strong>صدای دانش‌آموز</strong>
+        <small>سامانه ارتباط و همفکری</small>
+      </span>
+    </a>
+
+    <button class="top-home" type="button" data-go="home">
+      <span aria-hidden="true">⌂</span>
+      صفحه اصلی
+    </button>
+  </header>
+
+  <main class="app-shell">
+    <!-- صفحه اصلی -->
+    <section class="page active" id="view-home">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            فضایی امن برای شنیده‌شدن
+          </div>
+
+          <h1>
+            صدای تو،
+            <span class="gradient-text">آینده‌ی مدرسه</span>
+          </h1>
+
+          <p class="hero-description">
+            اینجا می‌توانی دغدغه‌ها، انتقادها و پیشنهادهایت را با ما در میان بگذاری.
+            هر پیام فرصتی است برای بهتر شدن.
+          </p>
+
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">✦</span>
+            <span>می‌توانی بدون وارد کردن نام، ناشناس بمانی.</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="floating-card">
+            <span class="floating-card-icon">✉</span>
+            <div class="floating-lines">
+              <i></i><i></i><i></i>
+            </div>
+          </div>
+          <div class="small-orb orb-a"></div>
+          <div class="small-orb orb-b"></div>
+          <div class="small-orb orb-c"></div>
+          <div class="art-caption">یک پیام کوچک، یک تغییر بزرگ</div>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">شروع کن</span>
+          <h2>از کجا می‌خواهی وارد شوی؟</h2>
+        </div>
+        <p>یکی از پنل‌های زیر را انتخاب کن.</p>
+      </div>
+
+      <div class="portal-grid">
+        <article class="portal-card student-card">
+          <div class="portal-card-top">
+            <span class="portal-icon student-icon" aria-hidden="true">✎</span>
+            <span class="card-tag">ویژه دانش‌آموزان</span>
+          </div>
+          <h3>پنل دانش‌آموز</h3>
+          <p>نامه، پیشنهاد یا انتقادت را بنویس و در صورت تمایل فایل پیوست کن.</p>
+          <button class="primary-button" type="button" data-go="identity">
+            ورود به پنل دانش‌آموز
+            <span aria-hidden="true">←</span>
+          </button>
+          <div class="card-decoration" aria-hidden="true">01</div>
+        </article>
+
+        <article class="portal-card admin-card">
+          <div class="portal-card-top">
+            <span class="portal-icon admin-icon" aria-hidden="true">⌘</span>
+            <span class="card-tag">دسترسی محدود</span>
+          </div>
+          <h3>پنل مدیریت</h3>
+          <p>نامه‌های ارسال‌شده را بررسی کن، فایل‌های پیوست را ببین و موارد را مدیریت کن.</p>
+          <button class="secondary-button" type="button" data-go="admin-login">
+            ورود به پنل مدیریت
+            <span aria-hidden="true">←</span>
+          </button>
+          <div class="card-decoration" aria-hidden="true">02</div>
+        </article>
+      </div>
+
+      <footer class="page-footer">
+        <span>طراح و برنامه نویس سایت:محمدامین ظاهری---زیر نظر حزب محافظه کاران</span>
+        <span class="footer-sparkle" aria-hidden="true">✦</span>
+      </footer>
+    </section>
+
+    <!-- نام دانش‌آموز -->
+    <section class="page" id="view-identity">
+      <div class="narrow-panel">
+        <button class="back-link" type="button" data-go="home">← بازگشت به صفحه اصلی</button>
+
+        <div class="form-panel">
+          <div class="step-indicator">
+            <span class="step-number">۱</span>
+            <span>شروع ارسال پیام</span>
+          </div>
+
+          <div class="panel-heading">
+            <span class="large-icon">👋</span>
+            <h1>دوست داری با چه نامی صدایت کنیم؟</h1>
+            <p>وارد کردن نام اختیاری است. اگر نامی ننویسی، پیام تو به‌صورت ناشناس ثبت می‌شود.</p>
+          </div>
+
+          <form id="identity-form">
+            <label class="field-label" for="student-name">نام یا نام مستعار <span>اختیاری</span></label>
+            <input
+              class="text-input"
+              id="student-name"
+              type="text"
+              maxlength="80"
+              autocomplete="off"
+              placeholder="مثلاً: سارا یا یک دانش‌آموز"
+            >
+
+            <div class="privacy-hint">
+              <span aria-hidden="true">🔒</span>
+              <span>نامت فقط برای نمایش کنار پیام استفاده می‌شود.</span>
+            </div>
+
+            <button class="primary-button wide-button" type="submit">
+              ادامه و نوشتن نامه
+              <span aria-hidden="true">←</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- نوشتن نامه -->
+    <section class="page" id="view-compose">
+      <div class="narrow-panel compose-panel">
+        <button class="back-link" type="button" data-go="identity">← بازگشت</button>
+
+        <div class="form-panel">
+          <div class="step-indicator">
+            <span class="step-number">۲</span>
+            <span>نوشتن پیام</span>
+          </div>
+
+          <div class="panel-heading compact-heading">
+            <h1>حرف دلت را بنویس</h1>
+            <p>هر چیزی که فکر می‌کنی به بهتر شدن مدرسه کمک می‌کند، با ما در میان بگذار.</p>
+          </div>
+
+          <form id="letter-form">
+            <label class="field-label" for="letter-subject">موضوع <span>اختیاری</span></label>
+            <input
+              class="text-input"
+              id="letter-subject"
+              type="text"
+              maxlength="120"
+              placeholder="مثلاً: پیشنهاد برای کتابخانه"
+            >
+
+            <label class="field-label message-label" for="letter-message">متن نامه</label>
+            <textarea
+              class="text-input message-input"
+              id="letter-message"
+              placeholder="نامه‌ات را اینجا بنویس..."
+              required
+            ></textarea>
+
+            <div class="upload-box">
+              <div class="upload-copy">
+                <span class="upload-icon" aria-hidden="true">↥</span>
+                <div>
+                  <strong>فایل یا تصویر پیوست کن</strong>
+                  <p>حداکثر ۵ فایل؛ هر فایل تا ۲٫۵ مگابایت و مجموعاً تا ۱۲٫۵ مگابایت</p>
+                </div>
+              </div>
+
+              <label class="upload-button" for="letter-files">
+                انتخاب فایل
+                <input id="letter-files" type="file" multiple>
+              </label>
+            </div>
+
+            <div id="file-list" class="file-list" aria-live="polite"></div>
+
+            <div class="form-bottom">
+              <span class="form-footnote">پیام شما پس از ارسال در سامانه ثبت می‌شود.</span>
+              <button class="primary-button submit-button" id="submit-letter" type="submit">
+                اتمام و ارسال نامه
+                <span aria-hidden="true">✓</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ورود مدیریت -->
+    <section class="page" id="view-admin-login">
+      <div class="narrow-panel login-panel">
+        <button class="back-link" type="button" data-go="home">← بازگشت به صفحه اصلی</button>
+
+        <div class="form-panel">
+          <div class="login-lock" aria-hidden="true">⌑</div>
+          <div class="panel-heading">
+            <span class="step-indicator centered-indicator">ورود مدیر</span>
+            <h1>خوش آمدید</h1>
+            <p>برای مشاهده‌ی پیام‌های دانش‌آموزان، رمز عبور مدیریت را وارد کنید.</p>
+          </div>
+
+          <form id="admin-login-form">
+            <label class="field-label" for="admin-password">رمز عبور</label>
+            <input
+              class="text-input"
+              id="admin-password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="رمز عبور مدیریت"
+              required
+            >
+            <p id="login-error" class="inline-error" aria-live="polite"></p>
+
+            <button class="primary-button wide-button" type="submit">
+              ورود به پنل مدیریت
+              <span aria-hidden="true">←</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- فهرست نامه‌های مدیریت -->
+    <section class="page" id="view-admin">
+      <div class="admin-content">
+        <div class="admin-header">
+          <div>
+            <div class="eyebrow"><span class="status-dot"></span> پنل مدیریت</div>
+            <h1>نامه‌های دریافتی</h1>
+            <p>پیام‌های ثبت‌شده را بررسی و پیوست‌های آن‌ها را مشاهده کنید.</p>
+          </div>
+          <button class="outline-button" type="button" data-go="home">خروج از پنل</button>
+        </div>
+
+        <div class="inbox-toolbar">
+          <div class="inbox-title">
+            <span class="inbox-icon" aria-hidden="true">▤</span>
+            <strong>صندوق پیام‌ها</strong>
+          </div>
+          <span class="count-badge" id="letter-count">۰ پیام</span>
+        </div>
+
+        <div id="admin-list" class="admin-list"></div>
+      </div>
+    </section>
+
+    <!-- جزئیات نامه -->
+    <section class="page" id="view-admin-detail">
+      <div class="admin-content">
+        <button class="back-link" type="button" data-go="admin">← بازگشت به فهرست نامه‌ها</button>
+        <div id="letter-detail"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast-check" aria-hidden="true">✓</span>
+    <span id="toast-message">پیام شما ارسال شد.</span>
+  </div>
+</body>
+</html>

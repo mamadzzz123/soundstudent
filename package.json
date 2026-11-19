@@ -1,0 +1,9 @@
+{
+  "name": "student-voice-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Student Voice static website with Vercel API functions and GitHub-backed JSON storage",
+  "engines": {
+    "node": ">=20"
+  }
+}
